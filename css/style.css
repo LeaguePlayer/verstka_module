@@ -10,6 +10,27 @@ input:focus {
   position: relative; }
 
 .orange_button {
+  background: #ffc70a;
+  background: -moz-linear-gradient(top, #ffc70a 0%, #ff9600 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffc70a), color-stop(100%, #ff9600));
+  background: -webkit-linear-gradient(top, #ffc70a 0%, #ff9600 100%);
+  background: -o-linear-gradient(top, #ffc70a 0%, #ff9600 100%);
+  background: -ms-linear-gradient(top, #ffc70a 0%, #ff9600 100%);
+  background: linear-gradient(to bottom, #ffc70a 0%, #ff9600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc70a', endColorstr='#ff9600',GradientType=0 );
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-top: 1px solid #ffe411;
+  border-radius: 5px;
+  line-height: 2;
+  box-shadow: 0px 1px 3px 1px #02264e;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0px 55px;
+  font-family: NeoSansBold; }
+
+.orange_button:hover {
   background: #ff9400;
   background: -moz-linear-gradient(left, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff9400), color-stop(50%, #ffc30b), color-stop(100%, #ff9400));
@@ -17,18 +38,7 @@ input:focus {
   background: -o-linear-gradient(left, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
   background: -ms-linear-gradient(left, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
   background: linear-gradient(to right, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9400', endColorstr='#ff9400',GradientType=1 );
-  font-size: 20px;
-  color: white;
-  border: none;
-  border-top: 1px solid #ffe411;
-  border-radius: 5px;
-  line-height: 2 !important;
-  box-shadow: 0px 1px 3px 1px #02264e;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 0px 55px;
-  font-family: NeoSansBold; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9400', endColorstr='#ff9400',GradientType=1 ); }
 
 .top_line {
   height: 8px;
@@ -149,7 +159,7 @@ input:focus {
         margin-bottom: 10px;
         border: 1px solid #bfbfbf;
         border-left: none;
-        line-height: 2; }
+        line-height: 2.3; }
       .pick_flat .pick_wrap .request label {
         display: inline-block;
         width: 29px;
@@ -193,6 +203,11 @@ input:focus {
         background: url(/img/request_lock.png) no-repeat 0px center; }
       .pick_flat .pick_wrap .request .clock {
         background: url(/img/request_clock.png) no-repeat 0px center; }
+      .pick_flat .pick_wrap .request .orange_button {
+        display: inline-block;
+        line-height: 1;
+        padding-top: 7px;
+        padding-bottom: 7px; }
     .pick_flat .pick_wrap .discount {
       text-align: center;
       color: white;
@@ -208,17 +223,14 @@ input:focus {
         background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
-        height: 150px;
+        height: 155px;
         top: 0px;
         left: 0px; }
 
 .cooperate {
   background-color: #2ee6d6;
-  background-image: url(/img/cooperate_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center 270px;
   text-align: center;
-  height: 1218px; }
+  height: 533px; }
   .cooperate .cooperate_header {
     background: url(/img/ribbon.png) no-repeat center 30px;
     height: 90px;
@@ -278,39 +290,45 @@ input:focus {
       font-family: NeoSansUltra;
       width: 900px; }
 
-.flats h3 {
-  font-size: 30px;
-  text-align: left;
-  font-weight: 300;
-  color: white;
-  text-shadow: 1px 1px 2px #2fcab2;
-  margin-top: 20px;
-  margin-left: 180px; }
-.flats h2 {
-  font-size: 28px;
-  font-family: NeoSansUltra;
-  color: #ffd119;
-  text-shadow: 1px 2px 3px #29bdaa;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  margin-left: 375px;
-  text-align: left; }
-.flats .flat_rooms {
-  background-color: #71f0de;
-  width: 450px;
-  line-height: 90px;
-  display: inline-block;
-  margin: 0px 50px 25px 50px;
-  border-radius: 5px;
-  border: 1px dashed white;
-  font-size: 20px;
-  color: #4d4d4d;
-  font-family: NeoSansBold; }
-  .flats .flat_rooms span {
-    font-size: 45px;
-    color: #ff9500;
-    font-weight: 800;
-    text-shadow: 0px 1px 1px #d8903c; }
+.flats {
+  background-image: url(/img/cooperate_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-color: #2ee6d6;
+  text-align: center; }
+  .flats h3 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 2px #2fcab2;
+    padding-top: 20px;
+    margin-left: 180px; }
+  .flats h2 {
+    font-size: 28px;
+    font-family: NeoSansUltra;
+    color: #ffd119;
+    text-shadow: 1px 2px 3px #29bdaa;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-left: 375px;
+    text-align: left; }
+  .flats .flat_rooms {
+    background-color: #71f0de;
+    width: 450px;
+    line-height: 90px;
+    display: inline-block;
+    margin: 0px 50px 25px 50px;
+    border-radius: 5px;
+    border: 1px dashed white;
+    font-size: 20px;
+    color: #4d4d4d;
+    font-family: NeoSansBold; }
+    .flats .flat_rooms span {
+      font-size: 45px;
+      color: #ff9500;
+      font-weight: 800;
+      text-shadow: 0px 1px 1px #d8903c; }
 
 .partners {
   height: 550px;
